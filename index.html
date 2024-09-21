@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Room tibet</title>
+  <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/NEXT ART_Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/NunitoSans_10pt-Light[1].woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/NunitoSans_10pt-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/NunitoSans_10pt-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/NunitoSans_10pt-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/NunitoSans_10pt-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container ">
+    <a class="logo">
+      <svg class="icon icon--logo">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+    </a>
+    <nav class="nav">
+    <ul class="list-reset list">
+    <li class="list__elem"><a href="#" class="link nav__link">Главная</a></li>
+    <li class="list__elem"><a href="#" class="link nav__link">Про гида</a></li>
+    <li class="list__elem"><a href="#" class="link nav__link">Программа тура</a></li>
+    <li class="list__elem"><a href="#" class="link nav__link">Стоимость</a></li>
+    <li class="list__elem"><a href="#" class="link nav__link">Блог</a></li>
+    <li class="list__elem"><a href="#" class="link nav__link">Контакты</a></li>
+    </ul>
+    <button class="btn-reset burger" data-graph-path="first" data-graph-speed="300">
+      <svg class="icon burger">
+        <use xlink:href="img/sprite.svg#burger"></use>
+      </svg>
+    </button>
+    <div class="graph-modal">
+      <button class="btn-reset js-modal-close graph-modal__close" aria-label="close modal">
+        <svg class="icon">
+          <use xlink:href="img/sprite.svg#esc-button"></use>
+        </svg>
+      </button>
+      <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
+        <div class="graph-modal__content modal-menu">
+          <nav class="nav">
+          <ul class="list-reset list list--modal">
+          <li class="list__elem"><a href="#" class="link nav__link before-arrow-icon">Про гида</a></li>
+          <li class="list__elem"><a href="#" class="link nav__link before-arrow-icon">Программа тура</a></li>
+          <li class="list__elem"><a href="#" class="link nav__link before-arrow-icon">Стоимость</a></li>
+          <li class="list__elem"><a href="#" class="link nav__link before-arrow-icon">Блог</a></li>
+          <li class="list__elem"><a href="#" class="link nav__link before-arrow-icon">Контакты</a></li>
+          </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="nav__link btn">
+      <span>Консультация</span>
+    </a>
+    </nav>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="section section--hero">
+  <div class="container section--hero__container">
+    <h1 class="title">
+      Насладись прогулкой в горах с командой единомышленников
+    </h1>
+    <form action="#" class="form container">
+    <label class="form__label container__elem">
+      <select id="booking-location" name="location" class=" input-reset form__input input--select">
+        <option value="" disabled selected>Локации для тура</option>
+        <option value="Bangcock">Bangcock</option>
+        <option value="Bangdick">Bangdick</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="Burabay">Burabay</option>
+      </select>
+      <span class="label__subtitle">выберите из списка</span>
+    </label>
+    <label class="form__label container__elem">
+      <input type="text" id="booking-date" name="date" class=" input-reset form__input input--date" placeholder="дата похода">
+      <span class="label__subtitle">укажите диапозон</span>
+    </label>
+    <label class="form__label container__elem">
+      <input type="number" id="booking-participants" name="participants" class=" input-reset form__input input--number" min="4" max="10" placeholder="участники">
+      <span class="label__subtitle">минимум 4 человека</span>
+    </label>
+  <button type="submit" class="btn-reset form__label container__elem form__btn">найти программу</button>
+</form>
+
+    <a href="#" class="btn-reset btn btn--hero">
+      <span>Найти программу</span>
+    </a>
+  </div>
+</section>
+
+      <section class="section section--about">
+  <div class="container section--about__container">
+    <div class="container__images">
+      <picture class="first-image">
+        <source srcset="img/about-mountains.png" type="image/png">
+        <img loading="lazy" src="img/about-mountains.png" class="image" width="300" height="300" alt="mountains image">
+      </picture>
+      <picture class="second-image">
+        <source srcset="img/about-forest.png" type="image/png">
+        <img loading="lazy" src="img/about-forest.png" class="image" width="300" height="300" alt="forest image">
+      </picture>
+    </div>
+    <div class="heading container__heading">
+      <p class="heading__subtitle">
+        о нашем походе
+      </p>
+      <h2 class="heading__title">
+        Исследуйте все горные массивы мира вместе с нами
+      </h2>
+      <p class="heading__text">
+        Его корни уходят в
+         один фрагмент классической
+          латыни 45 года н. э., то есть
+           более двух тысячелетий назад.
+            Ричард МакКлинток, профессор
+             латыни из колледжа Hampden-Sydney,
+           штат Вирджиния, взял одно из самых
+           странных слов в Lorem Ipsum, «consectetur"и
+          занялся его поисками в классической латинской
+          литературе.
+      </p>
+      <a href="#" class="btn-reset btn">
+        <span>Программа тура</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+      <section class="section section--programs">
+  <div class="container section--about__container section--programs__container">
+    <div class="heading container__heading">
+      <h3 class="heading__subtitle">
+        о нашем походе
+      </h3>
+      <h2 class="heading__title">
+        Исследуйте все горные массивы мира вместе с нами
+      </h2>
+      <p class="heading__text">
+        Его корни уходят в
+         один фрагмент классической
+          латыни 45 года н. э., то есть
+           более двух тысячелетий назад.
+            Ричард МакКлинток, профессор
+             латыни из колледжа
+      </p>
+      <ul class="list-reset heading__list">
+        <li class="list__item">
+          <h4 class="list__title">Опытный гид</h4>
+          <p class="list__text">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+        </li>
+        <li class="list__item">
+          <h4 class="list__title">Безопасный поход</h4>
+          <p class="list__text">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+        </li>
+        <li class="list__item">
+          <h4 class="list__title">Лояльные цены</h4>
+          <p class="list__text">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+        </li>
+      </ul>
+      <a href="#" class="btn-reset btn">
+        <span>Стоимость программ</span>
+      </a>
+    </div>
+    <div class="container__images">
+      <picture class="second-image">
+        <source srcset="img/programs-1.png" type="image/png">
+        <img loading="lazy" src="img/programs-1.png" class="image" width="300" height="300" alt="images">
+      </picture>
+
+      <picture class="second-image">
+        <source srcset="img/programs-2.png" type="image/png">
+        <img loading="lazy" src="img/programs-2.png" class="image" width="300" height="300" alt="images">
+      </picture>
+
+      <picture class="second-image">
+        <source srcset="img/programs-3.png" type="image/png">
+        <img loading="lazy" src="img/programs-3.png" class="image" width="300" height="300" alt="images">
+      </picture>
+
+      <picture class="second-image">
+        <source srcset="img/programs-4.png" type="image/png">
+        <img loading="lazy" src="img/programs-4.png" class="image" width="300" height="300" alt="images">
+      </picture>
+    </div>
+  </div>
+</section>
+
+      <section class="section section--popular-tour">
+  <div class="container">
+    <div class="heading container__heading">
+      <h3 class="heading__subtitle">
+        по версии отдыхающих
+      </h3>
+      <h2 class="heading__title">
+        Популярные направления
+      </h2>
+    </div>
+    <div class="swiper slider-1">
+  <div class="swiper-wrapper grid">
+    <div class="swiper-slide">
+      <article class="card">
+  <a href="#" class="card-container">
+    <div class="card-container__rating">
+      <span>4.9</span>
+    </div>
+
+    <div class="card-container__price-container">
+
+      <header class="card__heading">
+          <h4 class="card-title">
+            Озеро возле гор
+          </h4>
+          <span class="card-subtitle">
+            романтическое приключение
+          </span>
+      </header>
+
+      <div class="card__price">
+          <span class="price">480 $</span>
+      </div>
+
+    </div>
+
+  </a>
+</article>
+
+    </div>
+    <div class="swiper-slide">
+      <article class="card card-2">
+  <a href="#" class="card-container">
+    <div class="card-container__rating">
+      <span>4.5</span>
+    </div>
+
+    <div class="card-container__price-container">
+
+      <header class="card__heading">
+          <h4 class="card-title">
+            Ночь в горах
+          </h4>
+          <span class="card-subtitle">
+            в компании друзей
+          </span>
+      </header>
+
+      <div class="card__price">
+          <span class="price">500 $</span>
+      </div>
+
+    </div>
+
+  </a>
+</article>
+
+    </div>
+    <div class="swiper-slide">
+      <article class="card card-3">
+  <a href="#" class="card-container">
+    <div class="card-container__rating">
+      <span>5</span>
+    </div>
+
+    <div class="card-container__price-container">
+
+      <header class="card__heading">
+          <h4 class="card-title">
+            Йога в горах
+          </h4>
+          <span class="card-subtitle">
+            для тех, кто забоится о себе
+          </span>
+      </header>
+
+      <div class="card__price">
+          <span class="price">230 $</span>
+      </div>
+
+    </div>
+
+  </a>
+</article>
+
+    </div>
+  </div>
+</div>
+
+    <div class="heading container__heading">
+      <a href="#" class="btn-reset btn">
+        <span>Рейтинг направлений</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+      <section class="section section--blog">
+  <div class="container">
+    <div class="heading container__heading">
+      <h3 class="heading__subtitle">
+        делимся впечатлениями
+      </h3>
+      <h2 class="heading__title">
+        Блог о путешествиях
+      </h2>
+    </div>
+    <div class="swiper slider-1">
+      <div class="swiper-wrapper grid">
+        <div class="swiper-slide swiper-slide--row">
+          <article class="card card--horizontal">
+  <a href="#" class="card-container">
+    <div class="card-container__image">
+      <picture class="card-image">
+        <source srcset="img/blog-1.jpg" type="image/jpg">
+        <img loading="lazy" src="img/blog-1.jpg" class="image" alt="image">
+      </picture>
+    </div>
+
+    <div class="card-container__content">
+
+      <header class="card__heading">
+          <h4 class="card-title">
+            Красивая Италя, какая она в реальности?
+          </h4>
+          <span class="card-subtitle">
+            Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.
+          </span>
+      </header>
+
+      <div class="card__price">
+          <span class="price">04.01.2023</span>
+          <span class="link">читать статью</span>
+      </div>
+
+    </div>
+
+  </a>
+</article>
+
+        </div>
+        <div class="swiper-slide swiper-slide--row">
+          <article class="card card--horizontal">
+  <a href="#" class="card-container">
+    <div class="card-container__image">
+      <picture class="card-image">
+        <source srcset="img/blog-3.jpg" type="image/jpg">
+        <img loading="lazy" src="img/blog-3.jpg" class="image" alt="image">
+      </picture>
+    </div>
+
+    <div class="card-container__content">
+
+      <header class="card__heading">
+          <h4 class="card-title">
+            Долой сомнения! Весь мир открыт для вас!
+          </h4>
+          <span class="card-subtitle">
+            Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации… независимые способы реализации соответствующих условий активизации…
+          </span>
+      </header>
+
+      <div class="card__price">
+          <span class="price">04.01.2023</span>
+          <span class="link">читать статью</span>
+      </div>
+
+    </div>
+
+  </a>
+</article>
+
+        </div>
+        <div class="swiper-slide swiper-slide--row">
+          <article class="card card--horizontal">
+  <a href="#" class="card-container">
+    <div class="card-container__image">
+      <picture class="card-image">
+        <source srcset="img/blog-2.jpg" type="image/jpg">
+        <img loading="lazy" src="img/blog-2.jpg" class="image" alt="image">
+      </picture>
+    </div>
+
+    <div class="card-container__content">
+
+      <header class="card__heading">
+          <h4 class="card-title">
+            Как подготовиться к путешествию в одиночку?
+          </h4>
+          <span class="card-subtitle">
+            Для современного мира базовый вектор развития предполагает.
+          </span>
+      </header>
+
+      <div class="card__price">
+          <span class="price">04.01.2023</span>
+          <span class="link">читать статью</span>
+      </div>
+
+    </div>
+
+  </a>
+</article>
+
+        </div>
+        <div class="swiper-slide swiper-slide--row">
+          <article class="card card--horizontal">
+  <a href="#" class="card-container">
+    <div class="card-container__image">
+      <picture class="card-image">
+        <source srcset="img/blog-4.jpg" type="image/jpg">
+        <img loading="lazy" src="img/blog-4.jpg" class="image" alt="image">
+      </picture>
+    </div>
+
+    <div class="card-container__content">
+
+      <header class="card__heading">
+          <h4 class="card-title">
+            Индия… летим?
+          </h4>
+          <span class="card-subtitle">
+            Для современного мира базовый.
+          </span>
+      </header>
+
+      <div class="card__price">
+          <span class="price">04.01.2023</span>
+          <span class="link">читать статью</span>
+      </div>
+
+    </div>
+
+  </a>
+</article>
+
+        </div>
+      </div>
+    </div>
+    <div class="heading container__heading">
+      <a href="#" class="btn-reset btn">
+        <span>Другие материалы</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+      <footer class="section section--footer">
+  <div class="slider">
+    <div class="heading container__heading">
+      <h3 class="heading__subtitle">
+        фото-отчет
+      </h3>
+      <h2 class="heading__title">
+        Делимся впечатлениями
+      </h2>
+    </div>
+    <div class="gallery grid2">
+
+      <picture class="card-image card-image--wide">
+        <source srcset="img/photo-report-1.jpg" type="image/jpg">
+        <img loading="lazy" src="img/photo-report-1.jpg" class="image" alt="image">
+      </picture>
+
+      <picture class="card-image">
+        <source srcset="img/photo-report-2.jpg" type="image/jpg">
+        <img loading="lazy" src="img/photo-report-2.jpg" class="image" alt="image">
+      </picture>
+
+      <picture class="card-image">
+        <source srcset="img/photo-report-3.jpg" type="image/jpg">
+        <img loading="lazy" src="img/photo-report-3.jpg" class="image" alt="image">
+      </picture>
+      <!---->
+      <picture class="card-image card-image--4">
+        <source srcset="img/photo-report-4.jpg" type="image/jpg">
+        <img loading="lazy" src="img/photo-report-4.jpg" class="image" alt="image">
+      </picture>
+
+      <picture class="card-image card-image--wide2">
+        <source srcset="img/photo-report-5.jpg" type="image/jpg">
+        <img loading="lazy" src="img/photo-report-5.jpg" class="image" alt="image">
+      </picture>
+
+      <picture class="card-image">
+        <source srcset="img/photo-report-6.jpg" type="image/jpg">
+        <img loading="lazy" src="img/photo-report-6.jpg" class="image" alt="image">
+      </picture>
+
+    </div>
+    <div class="hidden-slider">
+      <div class="swiper slider-1">
+        <div class="swiper-wrapper grid">
+          <div class="swiper-slide">
+
+            <picture class="card-image card-image--wide">
+              <source srcset="img/photo-report-1.jpg" type="image/jpg">
+              <img loading="lazy" src="img/photo-report-1.jpg" class="image" alt="image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+
+            <picture class="card-image card-image--wide">
+              <source srcset="img/photo-report-2.jpg" type="image/jpg">
+              <img loading="lazy" src="img/photo-report-2.jpg" class="image" alt="image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+
+            <picture class="card-image card-image--wide">
+              <source srcset="img/photo-report-3.jpg" type="image/jpg">
+              <img loading="lazy" src="img/photo-report-3.jpg" class="image" alt="image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+
+            <picture class="card-image card-image--wide">
+              <source srcset="img/photo-report-4.jpg" type="image/jpg">
+              <img loading="lazy" src="img/photo-report-4.jpg" class="image" alt="image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+
+            <picture class="card-image card-image--wide">
+              <source srcset="img/photo-report-5.jpg" type="image/jpg">
+              <img loading="lazy" src="img/photo-report-5.jpg" class="image" alt="image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture class="card-image card-image--wide">
+              <source srcset="img/photo-report-6.jpg" type="image/jpg">
+              <img loading="lazy" src="img/photo-report-6.jpg" class="image" alt="image">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="heading container__heading">
+      <a href="#" class="btn-reset btn">
+        <span>Наш pinterest</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer__content container">
+    <div class="form-area">
+      <div class="gallery-form">
+        <div class="flex-between gallery-form__container">
+          <div class="heading container__heading">
+            <h3 class="heading__subtitle">
+              фото-отчет
+            </h3>
+            <h2 class="heading__title">
+              Делимся впечатлением
+            </h2>
+          </div>
+          <form action="#" class="form-inner">
+            <p>Введите e-mail адрес</p>
+            <input type="email" placeholder="name@domain.com" class="form__email">
+            <button type="submit" class="form__submit btn"><span>Подписаться на новости</span></button>
+            <p>подписываясь на новости, вы автоматически соглашаетесь с <a href="#">условиями обработки персональных данных и правилами рекламных рассылок</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="main-content__contacts">
+        <h3 class="heading">Компания «РумТибет»</h3>
+        <p class="text">Его
+          корни уходят в один фрагмент классической латыни 45 года н. э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.
+        </p>
+        <div class="links">
+          <a href="mailto: maysonpains@gmail.com" class="email">maysonpains@gmail.com</a>
+          <a href="tel:+7 (123) 456-78-90">+7 (123-45) 6-78-90</a>
+        </div>
+        <div class="socials">
+          <a href="#" class="social__link-icon">
+
+          </a>
+          <a href="#" class="social__link-icon">
+
+          </a>
+          <a href="#" class="social__link-icon">
+
+          </a>
+          <a href="#" class="social__link-icon">
+
+          </a>
+        </div>
+      </div>
+      <ul class="main-content__nav nav-1">
+        <h3 class="heading">Наши услуги</h3>
+        <a href="#" class="before-arrow-icon text">Прогулки в горы летом</a>
+        <a href="#" class="before-arrow-icon text">Зимние походы в горы</a>
+        <a href="#" class="before-arrow-icon text">Посещение храмов в горах</a>
+        <a href="#" class="before-arrow-icon text">Экстремальные виды туризма</a>
+        <a href="#" class="before-arrow-icon text">
+          Походы в джунглях Амазонии
+          <span class="new-content">new</span>
+        </a>
+        <a href="#" class="before-arrow-icon text">Поездка в Африку</a>
+      </ul>
+      <ul class="main-content__nav nav-2">
+        <h3 class="heading">Наши услуги</h3>
+        <a href="#" class="before-arrow-icon text">Как собрать в долгий поход?</a>
+        <a href="#" class="before-arrow-icon text">Жизненно важные предметы для похода</a>
+        <a href="#" class="before-arrow-icon text">Медицинская страховка, гарантии безопасности</a>
+        <a href="#" class="before-arrow-icon text">Если вы врач — загляните сюда</a>
+      </ul>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <div class="container flex-between">
+      <span class="copyright-text">ИП Константинопольский К.К., 2023</span>
+      <a href="#" class="copyright-text">Политика обработки персональных данных</a>
+    </div>
+  </div>
+
+</footer>
+
+    </main>
+  </div>
+</body>
+
+</html>
